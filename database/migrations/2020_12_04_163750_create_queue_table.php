@@ -16,6 +16,7 @@ class CreateQueueTable extends Migration
         Schema::create('queue', function (Blueprint $table) {
             $table->id();
             $table->integer('userId');
+            $table->integer('position');
             $table->timestamps();
         });
     }
