@@ -80,7 +80,7 @@ export default {
                     self.timer = 'Ai pierdut randul la coada!';
                     axios.get('/api/queue/removeInactive/' + self.user.id, {
                     }).then((response) => {
-                        window.location = '/home';
+                        window.location = '/acasa';
                     })
                 } else {
                     self.timer = zaTimer;
